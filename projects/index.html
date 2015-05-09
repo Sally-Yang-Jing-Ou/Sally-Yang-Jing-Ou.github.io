@@ -15,22 +15,48 @@ og_type: article
             
     <section class="wrapper style5">
         <div class="inner">
+           <div id="content" class="grid grid-16">
             <div id="content-padding">
             <div class="blockylist bigblockylist">
             <ul>
-                {% for page in site.projects %}
-                <!--     {% if page.is_project %} -->
                         <li class="test">
-                            <a href="{{ page.url }}"> 
-                                    <img src="{{ page.thumbnail }}" class="project_thumbnail">
-                                    <h1>{{ page.title }}</h1>
-                                    <div><strong>Languages: </strong>{{ page.languages }}</div>
-                                    <div><strong>Summary: </strong>{{ page.summary }}</div>
+                            <a href="https://github.com/Nosajool/Wordasm"> 
+                                    <img src="/img/projects/wordasm/thumb.jpg" class="project_thumbnail">
+                                    <h1>Wordasm (Web)</h1>
+                                    <div><strong>Technologies Used: </strong>JavaScript, Node.js, CSS, HTML, Bootstrap, jQuery </div>
+                                    <div><strong>Summary: </strong>custom web chat with an integrated word-guessing game</div>
                             </a>
                         </li>
-                  <!--   {% endif %} -->
-                {% endfor %}
+
+                        <li class="test">
+                            <a href="https://github.com/Sally-Yang-Jing-Ou/Sally-Yang-Jing-Ou.github.io"> 
+                                    <img src="/img/projects/personal-website/thumb.jpg" class="project_thumbnail">
+                                    <h1>This Website (Web)</h1>
+                                    <div><strong>Technologies Used: </strong>JavaScript, HTML, CSS, jQuery, HTML5</div>
+                                    <div><strong>Summary: </strong>a place to showcase my projects/photos, and personal blogging</div>
+                            </a>
+                        </li>
+
+                        <li class="test">
+                            <a href="https://github.com/Sally-Yang-Jing-Ou/SpinningTable"> 
+                                    <img src="/img/projects/Spinning-Table/thumb.jpg" class="project_thumbnail">
+                                    <h1>Spinning Table (iOS)</h1>
+                                    <div><strong>Technologies Used: </strong>Swift, SpriteKit</div>
+                                    <div><strong>Summary: </strong>an iOS game made in Swift</div>
+                            </a>
+                        </li>
+
+                        <li class="test">
+                            <a href="https://github.com/Sally-Yang-Jing-Ou/Flappy-Mario"> 
+                                    <img src="/img/projects/Flappy-Mario/thumb.jpg" class="project_thumbnail">
+                                    <h1>Flappy Mario (iOS)</h1>
+                                    <div><strong>Languages: </strong>Objective-C</div>
+                                    <div><strong>Summary: </strong>a mock version of the original flappy bird, with different rules</div>
+                            </a>
+                        </li>
+
             </ul>
+            </div>
             </div>
             </div>
         </div>

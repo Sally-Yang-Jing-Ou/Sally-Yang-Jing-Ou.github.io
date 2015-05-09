@@ -74,7 +74,7 @@ body{
 	margin:0 0 0 20px}
 
 .grid-16{width:940px;
-  margin:100px auto;}
+  margin: auto;}
 
 h2{
   font-size:1.75em;
@@ -97,10 +97,11 @@ h5,h6{
 
 p{
   color: #5c5c5c;
-  font-size: 1.1rem;
+  font-size: 1.14rem;
   line-height: 1.6em;
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
+  letter-spacing: initial;
   }
 
 #content {
@@ -163,23 +164,13 @@ p{
   margin-left: 40px;
 }
 
-.archiveblockylist a{min-height:65px;padding-top:0px;padding-bottom:0px}
+.archiveblockylist a{min-height:65px;}
 
-.archiveblockylist a h2{padding-top:8px;font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Open sans", sans-serif}
+.archiveblockylist a h2{padding-top:8px;font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Open sans", sans-serif; letter-spacing: inherit;}
 
 .archiveblockylist a div{padding-top:2px}
 
 .compact_list>li{padding:0px;margin:5px 0px;list-style-type:none}p{margin-bottom:1.25em}h2,h3,h4,h5{margin:1em 0 .75em 0;font-family:"Open Sans","Helvetica Neue",Arial,sans-serif}h5{margin-bottom:.5em;margin-top:.5em}td{background:white;vertical-align:middle}td a{display:block}
-
-.blockylist time{display:block;float:left;padding:0em .75em 0 0}
-
-.blockylist time span{color:#999999;display:block;margin:0;padding:0;text-align:center;font-family:Calibri,"Helvetica Neue",Arial,sans-serif}
-
-.blockylist time span.month{font-size:1em}
-
-.blockylist time span.day{font-size:1.6em;line-height:0.8em}
-
-.blockylist time span.year{font-size:0.8em}
 
 .blockylist a:hover time span,.blockylist a:hover .faded{color:#333}
 
