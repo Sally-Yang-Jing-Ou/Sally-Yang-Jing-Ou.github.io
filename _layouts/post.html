@@ -3,6 +3,15 @@ layout: base
 blog: selected
 og_type: article
 ---
+<article id="main">
+    <header>
+        <h2>Blogs</h2>
+        <p>This is where I talk about my thoughts & personal experience<br />
+         Thanks for reading</p> 
+    </header>
+            
+    <section class="wrapper style5">
+        <div class="inner">
 <a href="/blog/archive/">&laquo; Back to posts</a>
 <h1 style="margin:0px;;">{{ page.title }}</h1>
 <div class="faded" style="font-size:16px; margin-bottom:5px;">{{ page.date | date_to_string }}</div>
@@ -15,3 +24,6 @@ og_type: article
 {% assign template_type = 'post' %}
 
 {% include disqus.html %}
+        </div>
+  </section>
+</article>

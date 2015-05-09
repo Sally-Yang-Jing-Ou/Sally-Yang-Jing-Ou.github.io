@@ -1,210 +1,170 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html class="no-js"> 
-<head>
-        <meta charset="utf-8">
-        <meta property="og:title" content="{{ page.title }}" >
-        <meta property="og:type" content="{{ page.og_type }}" >
-        <meta property="og:url" content="http://www.sallysally.ca{{ page.url }}">
-        <title>{{page.title}} - Sally OuYang</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="/css/site.css" >
-        <link href="/favicon.ico" type="image/x-icon" rel="icon" />
-        <script src="js/parallax/modernizr-2.7.1.min.js"></script>
-        <style type="text/css">
-        body {
-             font-family: 'Open Sans', sans-serif;
-        }
-        </style>
-        
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sally Yang Jing Ou</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/style.css" />
         {% if page.lightbox %}
         {% include lightbox.html %}
         {% endif %}
-        {% include googleanalytics.html %}
-</head>
+         {% include googleanalytics.html %}
+    </head>
+    <body class="landing">
 
-<body class="loading">
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
-        <![endif]-->
-        <div id="preload">
-            <img src="img/about/bcg_slide-1.jpg">
-            <img src="img/about/bcg_slide-2.jpg">
-            <img src="img/about/bcg_slide-3.jpg">
-            <img src="img/about/bcg_slide-4.jpg">
-        </div>
-        
-        <main>
-            <section id="slide-1" class="homeSlide">
-                    {% include menu.html %} 
-                <div class="bcg" data-center="background-position: 50% 0px;" 
-                                data-top-bottom="background-position: 50% -100px;" 
-                                data-anchor-target="#slide-1">
-                    <div class="hsContainer1">
-                        <div class="hsContent1" data-center="opacity: 1" 
-                                                data-106-top="opacity: 0" 
-                                                data-anchor-target="#slide-1 h2">
-                            <h2>Sally OuYang</h2>
-                            <p>Keep scrolling down slowly to read more about me<br />It's fun, I promise</p>
+            <div id="page-wrapper">
+
+                    <header id="header" class="alt">
+                        <h1><a href="index.html">Sally Yang Jing Ou</a></h1>
+                        <nav id="nav">
+                            <ul>
+                                <li class="special">
+                                    <a href="#" class="menuToggle"><span>Menu</span></a>
+                                    <div id="menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="/projects/">Projects</a></li>
+                                            <li><a href="/blog/">Blog</a></li>
+                                            <li><a href="http://photos.sallysally.ca">Photos</a></li>
+                                            <li><a href="/files/resume.pdf">Résumé</a></li>
+                                            <li><a href="https://github.com/Sally-Yang-Jing-Ou">GitHub</a></li>
+                                            <li><a href="https://www.linkedin.com/in/sallyouyang">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <!-- Banner -->
+                    <section id="banner">
+                        <div class="inner">
+                            <h2>Sally Yang Jing Ou</h2>
+                            <p>Welcome<br />
+                            Scroll down to read more about me<br />
+                            It's fun, I promise</p>
                         </div>
-                    </div>
-                </div>
-            </section>
+                        <a href="#one" class="more scrolly">Explore More</a>
+                    </section>
 
-            <section id="slide-2-2">
-                <div class="bcg" data-0="background-color:rgb(1,27,59);" 
-                                data-top="background-color:(0,0,0);"   
-                                data-anchor-target="#slide-2-2">
-                    <div class="hsContainer1">
-                        <div class="hsContent1">
-                            <h2 data-center="opacity: 1" 
-                                data--150-bottom="opacity: 0" 
-                                data-200-top="opacity: 1" 
-                                data-106-top="opacity: 0" 
-                                data-anchor-target="#slide-2-2 h2">ABOUT SALLY</h2>
+                <!-- One -->
+                    <section id="one" class="wrapper style1 special">
+                        <div class="inner">
+                            <header class="major">
+                                <h2>Hello There! This is Sally</h2>
+                                <p>I am currently a Software Engineering student at University of Waterloo.<br />
+                                I'm passionate about full-stack development, creating mobile apps, and I actively try my best to improve my skills <br />
+                                I occasionally hack hardware for fun, and recently, I've been exploring IoT <br />
+                                as well as Pebble/Apple Watches development</p>
+                            </header>
+                            <ul class="icons major">
+                                <li><span class="icon fa-mobile major style2"><span class="label">Mobile</span></span></li>
+                                <li><span class="icon fa-github major style2"><span class="label">Github</span></span></li>
+                                <li><span class="icon fa-code major style2"><span class="label">Code</span></span></li>
+                                <li><span class="icon fa-cog major style2"><span class="label">Hardware</span></span></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="slide-2" class="homeSlide homeSlideTall">
-                <div class="bcg" data-center="background-position: 50% 0px;" 
-                                data-bottom-top="background-position: 50% 100px;" 
-                                data-top-bottom="background-position: 50% -100px;" 
-                                data-anchor-target="#slide-2">
-                    <div class="curtainContainer">
-                        <div class="curtain" data-bottom-top="opacity: 0" 
-                                            data-106-top="height: 1%; opacity: 0; top: -10%;" 
-                                            data-center="height: 100%; opacity: 0.65; top: 0%;" 
-                                            data-anchor-target="#slide-2">
-                        </div>
+                    </section>
 
-                        <div class="copy" data-bottom-top="opacity: 0" 
-                                        data--100-bottom="opacity: 0"
-                                        data--50-bottom="opacity: 1;" 
-                                        data--50-top="opacity: 1;" 
-                                        data--50-top="opacity: 0;" 
-                                        data-anchor-target="#slide-2 .copy">
-                            <h2>Sally OuYang</h2>
-                            <p>Hello! My name is Sally OuYang, I am currently a Software Engineering student at University of Waterloo. I'm passionate about programming, mobile apps development, UI design and I actively try my best to improve my skills
-                            </p> 
-
-                            <h2>My Hobbies</h2>
-                            <p>Other than coding and learning, the two things I cannot get enough of are reading and hiking. I also enjoy rock climbing, photography, and travelling
-                            </p>
-                            <p> </p>
-                            <p> Some of my weird hobbies that are worth mentioning are <a href="http://en.wikipedia.org/wiki/Urban_exploration">urban exploration</a> and <a href="http://en.wikipedia.org/wiki/People_watching">people watching</a> (this isn't stalking, in fact, they are two distinctively different things!)
-                            </p> 
-
-                            <h2>Contact Me</h2>
-                            <p> If you want to get in touch, I'm just an <a href="mailto:sally_auyoung@hotmail.com">email</a> away!</p>
-                            <p>You can also find me on <a href="https://github.com/Sally-Yang-Jing-Ou">GitHub</a> and <a href="https://www.linkedin.com/in/sallyouyang">LinkedIn</a></p>
-                        </div>      
-                    </div>
-                </div>
-            </section>
-
-            <section id="slide-2-3">
-                    <div class="bcg" data-0="background-color:rgb(1,27,59);" 
-                                    data-top="background-color:(0,0,0);"  
-                                    data-anchor-target="#slide-2-3">
-                        <div class="hsContainer1">
-                            <div class="hsContent1">
-                                <h2 data-center="opacity: 1" 
-                                    data--150-bottom="opacity: 0" 
-                                    data-200-top="opacity: 1" 
-                                    data-106-top="opacity: 0" 
-                                    data-anchor-target="#slide-2-3 h2">ABOUT MY WEBSITE</h2>
+                <!-- Two -->
+                    <section id="two" class="wrapper alt style2">
+                        <section class="spotlight">
+                            <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+                                <h2>My Hobbies<br />
+                                Or Unhealthy obsessions</h2>
+                                <p>The two things I can't get enough of are reading and hiking, some of my weird hobbies that are worth mentioning are <a href="http://en.wikipedia.org/wiki/Urban_exploration">urban exploration</a> and <a href="http://en.wikipedia.org/wiki/People_watching">people watching</a> (this isn't stalking, in fact, they are two distinctively different things!) <br \>
+                                If you want to know more about me, you can proceed to my projects and blogs via the Menu!</p>
                             </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+                                <h2>Get in Touch &<br />
+                                Let's be friends!</h2>
+                                <p>This site is built using <a href="https://github.com/jekyll/jekyll">Jekyll</a>. The source code used to create this website is publicly available on my <a href="https://github.com/Sally-Yang-Jing-Ou/Sally-Yang-Jing-Ou.github.io">GitHub</a> <br \> </p>
+                                 <p> If you want to get in touch, I'm just an <a href="mailto:sally_auyoung@hotmail.com">email</a> away! <br />
+                                 You can also find me on <a href="https://www.linkedin.com/in/sallyouyang">LinkedIn</a></p>
+                            </div>
+                        </section>
+                        <section class="spotlight">
+                            <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+                                <h2>I Love Coding<br />
+                                I Love Learning</h2>
+                                <p>I'm excited about new technologies, I like spending my time looking up new frameworks, learning new things and creating apps, whether it's mobile, web or hardware, I enjoy it all :D <br />
+                                This is also why I am so obsessed with hackathons, I love the sleepless nights where I can just hack away~ <br />
+                                I may not be an expert at everything, I often make mistakes, but with time, I'll get better! One step at a time :) </p>
+                            </div>
+                        </section>
+                    </section>
+
+                <!-- Three -->
+                    <section id="three" class="wrapper style3 special">
+                        <div class="inner">
+                            <header class="major">
+                                <h2>My life as a coding monkey</h2>
+                                <p>Click on the Menu at the top-right hand corner<br />
+                                to know more about me, if you wish :)</p>
+                            </header>
+                            <ul class="features">
+                                <li class="icon fa-mobile">
+                                    <h3><a href="index.html">Mobile Development</a></h3>
+                                    <p>I love creating mobile apps! I often write in Swift and Objective-C for iOS, and C# on Windows Phone 8 development!</p>
+                                </li>
+                                <li class="icon fa-code">
+                                    <h3><a href="index.html">Web Development</a></h3>
+                                    <p>I also make web apps for fun! I have experience in jQuery, JavaScript, MongoDB, ExpressJS, AngularJS and NodeJS. </p>
+                                </li>
+                                <li class="icon fa-cog">
+                                    <h3><a href="index.html">Hardware Hacks</a></h3>
+                                    <p>Hacking hardware is my newly discovered hobby! I've worked with Raspberry Pi, Python, C, C++ and Pebble/Apple Watches! </p>
+                                </li>
+                                <li class="icon fa-laptop">
+                                    <h3><a href="index.html">Blogging</a></h3>
+                                    <p>I am also maintaining a blog on this website! This is where I talk about my thoughts & my personal experience. </p>
+                                </li>
+                                <li class="icon fa-camera-retro">
+                                    <h3><a href="http://photos.sallysally.ca/">Photography</a></h3>
+                                    <p>Of course taking photos is a hobby of mine. I also enjoy hiking, rock climbing and travelling!</p>
+                                </li>
+                                <li class="icon fa-file-o">
+                                    <h3><a href="index.html">Professional Stuff</a></h3>
+                                    <p>You can find me via LinkedIn, Github or Email! Here's my resume</p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-            </section>
+                    </section>
 
-        <section id="slide-3" class="homeSlide homeSlideTall">
-            <div class="bcg" data-center="background-position: 50% 0px;" 
-                            data-bottom-top="background-position: 50% 100px;" 
-                            data-top-bottom="background-position: 50% -100px;" 
-                            data-anchor-target="#slide-3">
-                <div class="curtainContainer">
-                    <div class="curtain" data-bottom-top="opacity: 0" 
-                                        data-106-top="height: 1%; opacity: 0; top: -10%;" 
-                                        data-center="height: 100%; opacity: 0.65; top: 0%;" 
-                                        data-anchor-target="#slide-3">
-                    </div>
-                    <div class="copy" data-bottom-top="opacity: 0" 
-                                    data--100-bottom="opacity: 0" 
-                                    data--50-bottom="opacity: 1;" 
-                                    data--50-top="opacity: 1;" 
-                                    data--50-top="opacity: 0;" 
-                                    data-anchor-target="#slide-3 .copy">
-                        <h2>My Site</h2>
-                        <p><a href="/projects/">Projects</a>: this is where I show the side projects that I've been working on
-                        <br /><a href="/blog/">Blog</a>: this is where I talk about my thoughts
-                        <br /><a href="http://photos.sallysally.ca">Photos</a>: this is where I've spent 90% of my time making, so check it out!
-                        <br /><a href="/files/resume.pdf">Résumé</a>: well? Hire me!
-                        </p>
-
-                        <h2>Copyright</h2>
-                        <p>This site is built using <a href="https://github.com/jekyll/jekyll">Jekyll</a>
-                        <br />The source code used to create this website is publicly available on my <a href="https://github.com/Sally-Yang-Jing-Ou/Sally-Yang-Jing-Ou.github.io">GitHub</a></p>
-                        <p> </p>
-                        <p>All photos and blog posts are Copyright &copy; 2014 by Sally OuYang. All Rights Reserved
-                        <br>Anything else is <a href="http://en.wikipedia.org/wiki/Mit_license">MIT Licensed</a>. You may reuse anything if you want~</p>
-
-                        <h2>Keep Scrolling</h2>
-                        <p>Before you continue exploring my site, here's my all-time favourite quote that I would like to share with you. You may read up my <a href="/blog/">blog</a> to see why</p>
-                    </div>     
-                </div>
-            </div>
-        </section>
-
-        <section id="slide-2-4">
-                <div class="bcg" data-0="background-color:rgb(1,27,59);" 
-                                data-top="background-color:(0,0,0);"  
-                                data-anchor-target="#slide-2-4">
-                    <div class="hsContainer1">
-                        <div class="hsContent1">
-                            <h2 data-center="opacity: 1" 
-                                data--150-bottom="opacity: 0" 
-                                data-200-top="opacity: 1" 
-                                data-106-top="opacity: 0" 
-                                data-anchor-target="#slide-2-4 h2">ALL TIME FAVOURITE QUOTE</h2>
+                    <section id="cta" class="wrapper style4">
+                        <div class="inner">
+                            <header>
+                                <h2>Thanks for coming by</h2>
+                                <p>Sally OuYang <br /><br /><br /></p>
+                            </header>
                         </div>
-                    </div>
-                </div>
-        </section>
+                    </section>
 
-        <section id="slide-4" class="homeSlide homeSlideTall">
-            <div class="bcg" data-center="background-position: 50% 0px;" 
-                            data-bottom-top="background-position: 50% 100px;" 
-                            data-top-bottom="background-position: 50% -100px;" 
-                            data-anchor-target="#slide-4">
-                <div class="curtainContainer">
-                    <div class="curtain" data-bottom-top="opacity: 0" 
-                                        data-106-top="height: 1%; opacity: 0; top: -10%;" 
-                                        data-center="height: 100%; opacity: 0.65; top: 0%;" 
-                                        data-anchor-target="#slide-4">
-                    </div>
-                    <div class="copy" data-bottom-top="opacity: 0"
-                                        data--100-bottom="opacity: 0"
-                                        data--280-bottom="opacity: 1;"
-                                        data-280-top="opacity: 1;"
-                                        data-106-top="opacity: 0;"
-                                        data-anchor-target="#slide-4 .copy">
-                        <h2>"Yesterday You Said Tomorrow"<h2>
-                        <p>Thanks for droppying by. Enjoy your stay</p>
-                        <p>-Sally OuYang</p>
-                    </div>      
-                </div>
+                <!-- Footer -->
+                    <footer id="footer">
+                        <ul class="icons">
+                            <li><a href="https://www.facebook.com/sallysdream.AuYeung" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="https://instagram.com/sally_jin_auyeung/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://github.com/Sally-Yang-Jing-Ou" class="icon fa-github"><span class="label">Github</span></a></li>
+                            <li><a href="mailto:sally_auyoung@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                            <li><a href="https://ca.linkedin.com/in/sallyouyang" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="http://photos.sallysally.ca/" class="icon fa-camera-retro"><span class="label">Photos</span></a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Sally Yang Jing Ou</li>
+                        </ul>
+                    </footer>
+
             </div>
-        </section>
 
-        </main>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/parallax/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/parallax/imagesloaded.js"></script>
-        <script src="js/parallax/skrollr.js"></script>
-        <script src="js/parallax/main.js"></script>
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/init.js"></script>
+
     </body>
 </html>
