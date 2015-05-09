@@ -17,13 +17,13 @@ dl,dt,dd,ol,ul,li,
 fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
+footer,header,hgroup,section,summary,
 time,mark,audio,video{
 	margin:0;
 	padding:0;
 }
 article,aside,details,figcaption,figure,footer,
-header,hgroup,menu,nav,section{
+header,hgroup,section{
 	display: block;
 }
 
@@ -104,66 +104,6 @@ body{
 .grid-15	{ width:880px; }
 .grid-16	{ width:940px; margin:120px auto; }
 
-/*--- NAV ---*/
-#nav {
-    list-style:none;
-    width:100%;
-    overflow:hidden;
-    margin:0;
-    height:45px; /* 25px height + (8px + 12px padding) */
-    background: rgba(255, 255, 255, 0.84);
-    white-space: nowrap;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-
-    ul {
-        margin:0px;
-    }
-
-    a {
-        display:block;
-    }
-
-    a.selected {
-        /*background-color: #FFF2CF;*/
-        background-color: rgba(255, 255, 255, 0.95);
-        color: rgba(255, 255, 255, 0.95);
-    }
-
-
-    li { 
-        float:left;
-        display: inline;
-        list-style-image: none;
-        list-style-position: outside;
-        list-style-type: none;
-
-        a {
-            font-size: 1.25em; 
-            letter-spacing: 2px;
-            display: block;
-            float: left;
-            height:25px;
-            background-color:rgba(255, 255, 255)
-            color: rgba(255, 255, 255, 0.95);
-            text-align: center;
-            padding: 8px 20px 12px 20px;
-        }
-
-        a.nav-link:hover {
-            text-decoration:none;
-            background-color: #A9C78C;
-            color: #000000;
-        }
-        a.selected:hover {
-            background-color: white;
-            color: #000000;
-        }
-    }
-}
 
 /*--- TYPE AND SPACING ---*/
 h1{
@@ -762,15 +702,6 @@ CSS for tablets and narrower devices
     dd {
         margin-left:25px;
     }
-    #nav {
-        height: auto;
-
-        li a {
-            font-size: 1em;
-            height: 20px;
-            padding: 6px 16px 8px 16px;
-        }
-    }
 
     .contact-row {
         height: auto;
@@ -814,9 +745,6 @@ CSS for tablets and narrower devices
     /*
     A list of things you don’t want printing. Add to/subtract from as necessary. 
     */
-    #nav, #footer{
-        display:none;
-    }
     /*
     Linearise
     */

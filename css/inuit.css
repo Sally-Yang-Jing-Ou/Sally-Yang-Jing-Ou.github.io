@@ -15,13 +15,13 @@ dl,dt,dd,ol,ul,li,
 fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
+footer,header,hgroup,section,summary,
 time,mark,audio,video{
 	margin:0;
 	padding:0;
 }
 article,aside,details,figcaption,figure,footer,
-header,hgroup,menu,nav,section{
+header,hgroup,section{
 	display: block;
 }
 
@@ -89,35 +89,6 @@ ul.grids,
 	margin:0 0 0 20px;
 }
 .grid-16	{ width:940px; margin:0; }
-
-/*------------------------------------*\
-	NAV
-\*------------------------------------*/
-#nav{
-	list-style:none;
-	width:100%;
-	overflow:hidden;
-	margin:0 0 1.5em 0;
-}
-#nav li{
-	float:left;
-}
-#nav a{
-	display:block;
-}
-#nav.centred,
-#nav.centered{
-	text-align:center;
-}
-#nav.centred li,
-#nav.centered li{
-	display:inline;
-	float:none;
-}
-#nav.centred a,
-#nav.centered a{
-	display:inline-block;
-}
 
 /*--- HEADINGS ---*/
 h1{
@@ -695,16 +666,7 @@ body{
 	margin:0 auto;
 	font-size:0.75em; /* 12px (if base font-size was 16px) */
 }
-/*
-A list of things you don’t want printing. Add to/subtract from as necessary. 
-*/
-#nav,
-#footer{
-	display:none;
-}
-#logo img{
-	position:static;
-}
+
 /*
 Linearise
 */

@@ -10,10 +10,6 @@ a:visited {
         opacity: 1;
 }
 
-#nav {
-    margin-bottom: 0px;
-}
-
 pre {
     line-height: 18px;
 }
@@ -60,51 +56,6 @@ a:hover {
 
 h1 a {
     color:#333;
-}
-
-#nav {
-    height:45px; /* 25px height + 2 * 10px padding */
-    background-color:#6B563F;
-}
-
-#nav ul
-{
-    margin:0px;
-}
-
-#nav li
-{
-    display: inline;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-}
-
-#nav a
-{
-    letter-spacing: 2px;
-    display: block;
-    float: left;
-    height:25px;
-    background-color: #6B563F;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    padding: 8px 20px 12px 20px;
-}
-
-#nav a:hover 
-{
-    text-decoration:none;
-    background-color: #A9C78C;
-    color: #000000;
-}
-
-#nav a.selected
-{
-        /*background-color: #FFF2CF;*/
-        background-color: white;
-        color: #000000;
 }
 
 .faded{

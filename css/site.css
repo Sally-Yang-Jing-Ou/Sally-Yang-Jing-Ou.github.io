@@ -1,4 +1,4 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,section,summary,time,mark,audio,video{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,
 
 section{display:block}
 
@@ -19,26 +19,7 @@ caption,th{
 	text-align:left
 	}
 
-a{text-decoration:none}ul,ol{margin:0 0 1em 2em}ul ul,ol ol,ul ol,ol ul{list-style-type:disc}ul p,ol p{margin:0}
-dl{margin-bottom:1.5em}dt{font-weight:bold}dt:after,dt::after{content:":"}dd{margin-left:60px}
-q,i,em,cite{font-style:italic;font-weight:inherit}b,strong{font-weight:bold;font-style:inherit}
-mark{background:#ffc}s,del{text-decoration:line-through}small{font-size:0.75em;line-height:1}
-pre,code{font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;font-size:1em;font-style:normal}
-pre{overflow:auto;margin-bottom:1.5em;line-height:18px}
-code{line-height:1}
-img{max-width:100%;height:auto}
-object,embed,video{max-width:100%;height:auto}
-fieldset{padding:10px;border:1px solid #ccc;margin-bottom:1.5em}
-label{display:block;cursor:pointer}
-input,textarea{font-family:inherit;font-size:1em;line-height:1.5}
-table{margin-bottom:1.5em;width:100%;max-width:100%}
-th,td{vertical-align:top}
-th{font-weight:bold;text-align:center}
-td[colspan]{text-align:center}
-tfoot{text-align:center}
-.accessibility{position:absolute;left:-99999px}
-
-ul, menu, dir{
+ul, dir{
 display: block;
 list-style-type: disc;
 -webkit-margin-before: 1em;
@@ -50,7 +31,7 @@ list-style-type: disc;
 
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
-	font-weight:normal
+	/*font-weight:normal*/
 	}
 q:before,q:after
 {
@@ -95,69 +76,6 @@ body{
 .grid-16{width:940px;
   margin:100px auto;}
 
-#nav{
-    float: left;
-    overflow:hidden;
-    width:100%;
-    position:fixed;
-    margin: 0 auto;
-    z-index: 1;
-    background-color: rgba(2, 2, 2, 0.03);
-}
-
-#nav ul{
-    clear:left;
-    float:left;
-    list-style:none;
-    text-align: center;
-    margin:0;
-    padding:0;
-    left:50%;
-    position: relative;
-}
-
-#nav a{display:block}
-
-#nav a.selected{
-  color:#5c5c5c;
-}
-
-#nav ul li{
-  display:block;
-  float:left;
-  list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   right:50%;}
-
-#nav ul li a{
-  font-size:1.25em;
-  letter-spacing:1.2px;
-  height:25px;
-  float:left;
-  display:block;
-  margin:0 0 0 40px;
-  color:#30D6AC;
-  text-align:center;
-  padding:8px 20px;}
-
-#nav ul li a.nav-link:hover{
-  text-decoration:none;
-  background-color:rgba(255, 255, 255, 0);
-  color:#000000}
-
-#nav ul li a.selected:hover{
-  background-color:rgba(255, 255, 255, 0);
-  color:#000000}
-
-h1{font-size:2.2em;
-  margin-bottom:0.25em;
-  line-height:1.5;
-  text-align: center;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Open sans, sans-serif; 
-  }
-
 h2{
   font-size:1.75em;
   line-height:1}
@@ -185,16 +103,6 @@ p{
   text-rendering: optimizeLegibility;
   }
 
-.main-background2 {
-    background: url(/img/gradient-grey.jpg) fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    position: absolute;
-}
 #content {
   background-color:rgba(250, 250, 250, 0);
   min-height:400px;
@@ -203,16 +111,6 @@ p{
 #content-padding{
   padding:25px}
 
-a{
-  color:#30D6AC;
-  }
-
-a:hover{
-  color:#30D6AC;
-}
-
-h1 a{color:#333}
-
 .faded{
   color:#888888;
   font-family: Baskerville-Italic, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -220,16 +118,23 @@ h1 a{color:#333}
   text-align:center;
 }
 
-.about{
-  color:#30D6AC;
-  font-family: Avenir;
-  font-size:16px;
-  text-align: center;
-}
 .indent{
   padding-left:7px}
 
-.blockylist h1,.blockylist h2,.blockylist h3,.blockylist h4,.blockylist h5{margin:0px}
+.blockylist h1 {
+  margin:0px;
+  font-size:2.2em; 
+  margin-bottom:0.25em;
+  line-height:1.5;
+  text-align: center;
+  font-weight: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Open sans, sans-serif;
+  color: rgb(46, 56, 66);
+  letter-spacing: inherit;
+  text-transform: inherit
+}
+
+.blockylist h2,.blockylist h3,.blockylist h4,.blockylist h5{margin:0px}
 
 .blockylist ul{margin:10px 0px 10px 0px}
 
@@ -241,11 +146,11 @@ h1 a{color:#333}
 
 .blockylist a{text-decoration:none;display:block;color:#333333;padding:10px}
 
-.blockylist a:hover{background-color:#30D6AC;color:#000}
+/*.blockylist a:hover{background-color:#30D6AC;color:#000}*/
 
 .bigblockylist>ul>li{margin-bottom:10px}
 
-.bigblockylist a{min-height:110px;padding-top:0px;padding-bottom:0px}
+.bigblockylist a{min-height:110px;padding-top:0px;padding-bottom: 12px;}
 
 .bigblockylist h1{
   padding-top:4px; 
@@ -319,14 +224,6 @@ pre{background-color:#EEEEEE;border-top:1px solid #CCCCCC;border-bottom:1px soli
 dd{
   margin-left:25px}
 
-#nav{height:auto}
-
-#nav li a{
-  font-size:1em;
-  height:20px;
-  padding:6px 16px 8px 16px
-}
-
 .contact-row{
   height:auto
   }
@@ -343,8 +240,6 @@ dd{
 
 body{width:75%;margin:0 auto;font-size:0.75em}
 
-#nav,#footer{display:none}
-
 .grid{width:auto;float:none;clear:both}
 
 img{max-width:100%;height:auto}
@@ -360,19 +255,6 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding:0;
-}
-
-#main-background2 {
-  background: url('/img/gradient-grey.jpg');
-  margin: auto;
-  min-width: 100%;
-  min-height: 100%;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover;    
-  -o-background-size: cover;      
-  background-size: cover;
-  position: relative;
 }
 
 code{font-size:12px;font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;background-color:#EEEEEE;padding:4px}
