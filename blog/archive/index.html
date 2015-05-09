@@ -1,11 +1,45 @@
----
-layout: base
-blog: selected
-title: Archive
-description: An archive of all blog posts by Sally OuYang
-og_type: blog
----
-<article id="main">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sally Yang Jing Ou</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <style type="text/css">
+        body {
+             font-family: 'Open Sans', sans-serif;
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="/css/site.css" >
+        <link rel="stylesheet" type="text/css" href="/css/syntax.css" >
+    </head>
+    <body>
+
+            <div id="page-wrapper">
+
+                    <header id="header">
+                        <h1><a href="/">Sally Sally</a></h1>
+                        <nav id="nav">
+                            <ul>
+                                <li class="special">
+                                    <a href="#" class="menuToggle"><span>Menu</span></a>
+                                    <div id="menu">
+                                        <ul>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/projects/">Projects</a></li>
+                                            <li><a href="/blog/">Blog</a></li>
+                                            <li><a href="http://photos.sallysally.ca">Photos</a></li>
+                                            <li><a href="/files/resume.pdf">Résumé</a></li>
+                                            <li><a href="https://github.com/Sally-Yang-Jing-Ou">GitHub</a></li>
+                                            <li><a href="https://www.linkedin.com/in/sallyouyang">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    
+                    <article id="main">
     <header>
         <h2>Blogs</h2>
         <p>This is where I talk about my thoughts & personal experience<br />
@@ -22,14 +56,28 @@ og_type: blog
 
 <div class="blockylist archiveblockylist">
 <ul style="margin: 0px;">
-    {% for post in site.posts %}
+    
     <li>
-        <a href="{{ post.url }}"> 
-            <h2>{{ post.title }}</h2>
-            <div> About {{ post.tags | array_to_sentence_string }} - {{post.date | date:'%B %d, %Y'}} </div>
+        <a href="/blog/2014/09/26/yesterday-you-said-tomorrow/"> 
+            <h2>Yesterday You Said Tomorrow</h2>
+            <div> About Motivation - September 26, 2014 </div>
         </a>
     </li>
-{% endfor %}
+
+    <li>
+        <a href="/blog/2014/08/26/focus-on-what-you-have/"> 
+            <h2>Focus on What You Have</h2>
+            <div> About Life - August 26, 2014 </div>
+        </a>
+    </li>
+
+    <li>
+        <a href="/blog/2014/07/14/first-post/"> 
+            <h2>First Post</h2>
+            <div> About Motivation - July 14, 2014 </div>
+        </a>
+    </li>
+
 </ul>
 </div>
 
@@ -38,3 +86,28 @@ og_type: blog
         </div>
   </section>
 </article>
+
+
+     <!-- Footer -->
+           <footer id="footer">
+               <ul class="icons">
+                   <li><a href="https://www.facebook.com/sallysdream.AuYeung" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                   <li><a href="https://instagram.com/sally_jin_auyeung/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                   <li><a href="https://github.com/Sally-Yang-Jing-Ou" class="icon fa-github"><span class="label">Github</span></a></li>
+                   <li><a href="mailto:sally_auyoung@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                   <li><a href="https://ca.linkedin.com/in/sallyouyang" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                   <li><a href="http://photos.sallysally.ca/" class="icon fa-camera-retro"><span class="label">Photos</span></a></li>
+               </ul>
+               <ul class="copyright">
+                   <li>&copy; Sally Yang Jing Ou</li>
+               </ul>
+           </footer>
+
+            <script src="/assets/js/jquery.min.js"></script>
+            <script src="/assets/js/jquery.scrollex.min.js"></script>
+            <script src="/assets/js/jquery.scrolly.min.js"></script>
+            <script src="/assets/js/skel.min.js"></script>
+            <script src="/assets/js/init.js"></script>
+
+    </body>
+</html>
